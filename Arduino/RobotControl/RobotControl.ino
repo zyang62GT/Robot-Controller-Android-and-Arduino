@@ -1,7 +1,7 @@
 /*
  * RobotControl Arduino sketch
  * VIP I-Natural Robot Team
- * Last Edited by Yao Lu, December 1, 2012
+ * Last Edited by Zhou Yang, April 1, 2013
  */
 
 // include Android-Arduino bluetooth communications library
