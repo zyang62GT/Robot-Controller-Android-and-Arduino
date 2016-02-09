@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.gatech.inatural.robotcontrol"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.gatech.inatural.robotcontrol.Main"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.gatech.inatural.robotcontrol.AccelControl"
+            android:label="@string/title_activity_accel_control" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.inatural.robotcontrol.Main" />
+        </activity>
+        <activity
+            android:name="edu.gatech.inatural.robotcontrol.AccelExample"
+            android:label="@string/title_activity_accel_example" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.inatural.robotcontrol.Main" />
+        </activity>
+        <activity
+            android:name="edu.gatech.inatural.robotcontrol.Controller"
+            android:label="@string/title_activity_controller" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.inatural.robotcontrol.Main" />
+        </activity>
+        <activity
+            android:name="edu.gatech.inatural.robotcontrol.BTConnect"
+            android:label="@string/title_activity_btconnect" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.inatural.robotcontrol.Main" />
+        </activity>
+        <activity
+            android:name="edu.gatech.inatural.robotcontrol.VerticalSlidebarExampleActivity"
+            android:label="@string/title_activity_verticalslidebarexampleactivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.gatech.inatural.robotcontrol.QueueController"
+            android:label="@string/title_activity_queue_controller"
+            android:parentActivityName="edu.gatech.inatural.robotcontrol.Main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.inatural.robotcontrol.Main" />
+        </activity>
+        <activity
+            android:name="edu.gatech.inatural.robotcontrol.Bcontroller"
+            android:label="@string/title_activity_bcontroller" >
+        </activity>
+    </application>
+
+</manifest>

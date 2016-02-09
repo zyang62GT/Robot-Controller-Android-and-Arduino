@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/bt_connectedmac"
+        tools:context=".BTConnect" />
+
+    <EditText
+        android:id="@+id/bt_editMAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView1"
+        android:layout_toLeftOf="@+id/bt_submit"
+        android:ems="10"
+        android:hint="@string/bt_editmac" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_editMAC"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/bt_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt_editMAC"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bt_editMAC"
+        android:minWidth="50dp"
+        android:onClick="button_refresh"
+        android:text="Refresh"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt_editMAC"
+        android:layout_alignTop="@+id/bt_editMAC"
+        android:layout_toLeftOf="@+id/bt_refresh"
+        android:minWidth="50dp"
+        android:onClick="changeMACButton"
+        android:text="@string/submit"
+        android:textSize="10sp" />
+
+</RelativeLayout>

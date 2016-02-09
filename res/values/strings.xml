@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, VerticalSlidebarExampleActivity!</string>
+    <string name="app_name">RobotControl</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="main_button1">Controller</string>
+    <string name="main_button2">AccelExample</string>
+    <string name="main_button3">VerticalScrollBar</string>
+    <string name="main_button4">Bluetooth</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">RobotControl</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_accel_control">Accelerometer Control</string>
+    <string name="title_activity_accel_example">AccelExample</string>
+    <string name="title_activity_controller">Controller</string>
+    <string name="title_activity_btconnect">BTConnect</string>
+    <string name="title_activity_verticalslidebarexampleactivity">VerticalSlidebar</string>
+    <string name="bt_editmac">eg. 00:07:80:91:30:AE</string>
+    <string name="bt_connectedmac">MAC Address Here</string>
+    <string name="submit">Submit</string>
+
+    <color name="LightGray">#99FFFFFF</color>
+
+    <string name="title_activity_queue_controller">QueueController</string>
+    <string name="title_activity_bcontroller">Bcontroller</string>
+
+</resources>
